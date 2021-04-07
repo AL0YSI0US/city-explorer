@@ -35,7 +35,7 @@
 
 ## T I M E . E S T I M A T E S
 
-## **React repository & API keys** : Feature One
+## ⚙️ **React repository & API keys** : Feature One
 
 
 Estimate of time needed to complete: _____
@@ -72,7 +72,7 @@ city-explorer
    └── src/
       |__App.js
 ```
-## **Locations** : Feature Two
+## ⚙️ **Locations** : Feature Two
 
 As a user of City Explorer, I want to enter the name of a location so that I can see the exact latitude and longitude of that location.
 
@@ -89,7 +89,7 @@ Finish time: _____
 
 Actual time needed to complete: _____
 ```
-## **Map** : Feature Three
+## ⚙️ **Map** : Feature Three
 
 As a user, I want to see a map of the city so that I can see the layout of the area I want to explore.
 
@@ -107,7 +107,7 @@ Finish time: _____
 
 Actual time needed to complete: _____
 ```
-## **Errors** : Feature Four
+## ⚙️ **Errors** : Feature Four
 
 As a user, I want clear messages if something goes wrong so I know if I need to make any changes or try again in a different manner.
 
