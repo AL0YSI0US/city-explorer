@@ -47,9 +47,12 @@ Finish time: _____
 Actual time needed to complete: _____
 #### Repository Configuration:
 
+- [x] Create a new repo called `city-explorer` on GitHub, initialized with no files.
+- [x] Use `create-react-app` to setup a new React application named `city-explorer` in your local projects directory. 
 - [ ] Ensure repository matches file configuration map
-- [X] Convert the `README.md` file to be documentation regarding your lab and its current state of development.
-- [X] post on deployed app web address in github settings
+- [x] Connect your GitHub repo to your local repo using the directions on GitHub.
+- [x] Convert the `README.md` file to be documentation regarding your lab and its current state of development.
+- [x] post on deployed app web address in github settings
 - [ ] Add a `.gitignore` file with React configurations, including ignoring of `.env`.
 - [ ] Create a `package.json` file with all dependencies and any associated details related to configuration. The dependencies needed for today's lab include: Axios and Bootstrap.
 - [ ] Create a PR of your basic React app to your `main` branch. Thanks to the "Deploy Preview" feature of Netlify, your branch will be deployed so you can see it live, even before you merge it to `main`. As you work through the lab, push all your work to the same PR, verifying it's working on Netlify as you go.
