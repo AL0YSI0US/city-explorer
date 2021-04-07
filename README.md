@@ -131,6 +131,8 @@ Actual time needed to complete: _____
 
 + [NPM JS](https://www.npmjs.com/package/axios)
 + [locationiq](https://locationiq.com/docs#search-forward-geocoding)
++ [Ignoring Files](https://docs.github.com/en/github/getting-started-with-github/ignoring-files) .gitignore / github docs
++ [A collection of useful .gitignore templates](https://github.com/github/gitignore) github / gitignore
 
   + *Specifically, the “Search / Forward GeoCoding” and “Static Maps” sections.*
 + seattle-code-301n21/class-04/[**in-form-ation**](https://github.com/codefellows/seattle-code-301n21/tree/main/class-04/demo/in-form-ation/src)/src
