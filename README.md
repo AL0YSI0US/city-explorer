@@ -33,10 +33,7 @@
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. 
 -->
 
-<div align="center">
-<h2>T I M E . E S T I M A T E S</h2>
-<div/>
-
+## T I M E . E S T I M A T E S
 
 ## **React repository & API keys** : Feature One
 
