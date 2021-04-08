@@ -22,6 +22,8 @@
 
 ## Change Log
 
+04-07-2021 11:22pm - **Deployed on Netlyify** : https://confident-thompson-632e1c.netlify.app/
+
 04-07-2021 11:22pm - **Launched on Netlyify** : https://confident-thompson-632e1c.netlify.app/
 
 04-06-2021 9:22pm - **Repository Created** : https://github.com/AL0YSI0US/city-explorer
@@ -31,34 +33,34 @@
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. 
 -->
 
-## ⏰ T I M E . E S T I M A T E S
+## ⏰ T I M E . E S T I M A T E S [![wakatime](https://wakatime.com/badge/github/AL0YSI0US/city-explorer.svg)](https://wakatime.com/badge/github/AL0YSI0US/city-explorer)
 
 ## ⚙️ **React repository & API keys** : Feature One
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 4 hours
 
-Start time: _____
+Start time: 12:00
 
-Finish time: _____
+Finish time: 5:45
 
-Actual time needed to complete: _____
+Actual time needed to complete: 5 hrs 45 mins
 
 #### Repository Configuration:
 
-- [x] Create a new repo called `city-explorer` on GitHub, initialized with no files.
-- [x] Use `create-react-app` to setup a new React application named `city-explorer` in your local projects directory. 
-- [x] Ensure repository matches file configuration map
-- [x] Connect your GitHub repo to your local repo using the directions on GitHub.
-- [x] Convert the `README.md` file to be documentation regarding your lab and its current state of development.
-- [x] post on deployed app web address in github settings
-- [x] Add a `.gitignore` file with React configurations, including ignoring of `.env`.
-- [x] Create a `package.json` file with all dependencies and any associated details related to configuration. The dependencies needed for today's lab include: Axios and Bootstrap.
-- [x] Create a PR of your basic React app to your `main` branch. Thanks to the "Deploy Preview" feature of Netlify, your branch will be deployed so you can see it live, even before you merge it to `main`. As you work through the lab, push all your work to the same PR, verifying it's working on Netlify as you go.
-- [ ] Procure a LocationIQ free-tier account. From the Dashboard, navigate to your API Access Tokens page. View, then Update the existing token, to change the label to "City Explorer".
-- [ ] MOST IMPORTANTLY: Add your deployed Netlify app url as an HTTP Referrer to your API token settings. This step is necessary to prevent any unauthorized use of your token.
-  - [ ] To add that HTTP Referrer, you'll want to look at your API token on LocationIQ, then click the "Update" button and add in your Netlify site's URL to the HTTP Referrers textbox. It'll add another layer of protection, to make sure nobody else can steal your API key
-- [ ] Create an `.env` file: Your API key goes here for local development. Make sure this file is in your `.gitignore`.
-- [ ] Add your API key to your Netlify deployment. Under "Site settings" > "Build & deploy" > "Environment", you need to add "Edit variables" to add your API key, giving it the same name you used in your local .env file.
+- [X] Create a new repo called `city-explorer` on GitHub, initialized with no files.
+- [X] Use `create-react-app` to setup a new React application named `city-explorer` in your local projects directory.
+- [X] Ensure repository matches file configuration map
+- [X] Connect your GitHub repo to your local repo using the directions on GitHub.
+- [X] Convert the `README.md` file to be documentation regarding your lab and its current state of development.
+- [X] post on deployed app web address in github settings
+- [X] Add a `.gitignore` file with React configurations, including ignoring of `.env`.
+- [X] Create a `package.json` file with all dependencies and any associated details related to configuration. The dependencies needed for today's lab include: Axios and Bootstrap.
+- [X] Create a PR of your basic React app to your `main` branch. Thanks to the "Deploy Preview" feature of Netlify, your branch will be deployed so you can see it live, even before you merge it to `main`. As you work through the lab, push all your work to the same PR, verifying it's working on Netlify as you go.
+- [X] Procure a LocationIQ free-tier account. From the Dashboard, navigate to your API Access Tokens page. View, then Update the existing token, to change the label to "City Explorer".
+- [X] MOST IMPORTANTLY: Add your deployed Netlify app url as an HTTP Referrer to your API token settings. This step is necessary to prevent any unauthorized use of your token.
+  - [X] To add that HTTP Referrer, you'll want to look at your API token on LocationIQ, then click the "Update" button and add in your Netlify site's URL to the HTTP Referrers textbox. It'll add another layer of protection, to make sure nobody else can steal your API key
+- [X] Create an `.env` file: Your API key goes here for local development. Make sure this file is in your `.gitignore`.
+- [X] Add your API key to your Netlify deployment. Under "Site settings" > "Build & deploy" > "Environment", you need to add "Edit variables" to add your API key, giving it the same name you used in your local .env file.
 
 ```sh
                            File configuration map
@@ -71,7 +73,7 @@ city-explorer
    ├── README.md
    ├── public/
    └── src/
-      |__App.js
+      |__App.j
 ```
 
 ## ⚙️ **Locations** : Feature Two
