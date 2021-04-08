@@ -2,7 +2,7 @@
 
 **Author**: Aloysious
 
-**Version**: 1.0.1
+**Version**: 1.2.2
 
 + [{ `city-explorer Trello Project Board` }](https://trello.com/b/0jJjZi3c/city-explorer-trello-board)
 
@@ -22,7 +22,7 @@
 
 ## Change Log
 
-04-07-2021 11:22pm - **Deployed on Netlyify** : https://confident-thompson-632e1c.netlify.app/
+04-07-2021 11:22pm - **Re-deployment on Netlyify** : https://confident-thompson-632e1c.netlify.app/
 
 04-07-2021 11:22pm - **Launched on Netlyify** : https://confident-thompson-632e1c.netlify.app/
 
@@ -33,7 +33,7 @@
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. 
 -->
 
-## ⏰ T I M E . E S T I M A T E S [![wakatime](https://wakatime.com/badge/github/AL0YSI0US/city-explorer.svg)](https://wakatime.com/badge/github/AL0YSI0US/city-explorer)
+## ⏰ T I M E . E S T I M A T E S 
 
 ## ⚙️ **React repository & API keys** : Feature One
 
