@@ -9,8 +9,8 @@
   - [ ] sandbox : Trello in 301 { `outlines assignment requirements` }
 - [ ] If I need to create an account on a new website there should be a step by step guide of images to follow, **this is a pretty standard accessibility need in any environment**.
 - [ ] Disability department??? Curiosity??? Does code fellows value accessibility? Do they know what the  general education standards are??
-- [ ] how about you get class materials within 24hrs of payment for any class
-- [ ] no calsses should have less than 2 to 3 weeks between them, students learners need rest and staff should be refining skills during this time. mentoring each other collaborating on advancements that better the learning environment etc
+- [ ] Obtain class materials within 24hrs of payment for any class
+- [ ] calsses should have no less than 2 to 3 weeks between them, students learners need rest and staff should be refining skills during this time. mentoring each other collaborating on advancements that better the learning environment etc
 
 ## Questions
 
