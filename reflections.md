@@ -9,10 +9,13 @@
   - [ ] sandbox : Trello in 301 { `outlines assignment requirements` }
 - [ ] If I need to create an account on a new website there should be a step by step guide of images to follow, **this is a pretty standard accessibility need in any environment**.
 - [ ] Disability department??? Curiosity??? Does code fellows value accessibility? Do they know what the  general education standards are??
+- [ ] how about you get class materials within 24hrs of payment for any class
+- [ ] no calsses should have less than 2 to 3 weeks between them, students learners need rest and staff should be refining skills during this time. mentoring each other collaborating on advancements that better the learning environment etc
 
 ## Questions
 
-- [ ] how do I print this tree in my ccommand line?
+- [X] how do I print this tree in my ccommand line? { `Instructor Ryan answered this` }
+  - [X] CD into src to avoid displayin node modules
 
 ```sh
 city-explorer-api
@@ -26,22 +29,5 @@ city-explorer-api
    ├── README.md
    └── server.js
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 [⇐ README.md](README.md)

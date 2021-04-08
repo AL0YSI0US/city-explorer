@@ -8,7 +8,6 @@
 
 <!-- increment the patch/fix/version number if you make more commits past your first submission -->
 
-
 ## Overview
 
 <!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
@@ -27,7 +26,6 @@
 
 04-06-2021 9:22pm - **Repository Created** : https://github.com/AL0YSI0US/city-explorer
 
-
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. 
@@ -37,7 +35,6 @@
 
 ## ⚙️ **React repository & API keys** : Feature One
 
-
 Estimate of time needed to complete: _____
 
 Start time: _____
@@ -45,6 +42,7 @@ Start time: _____
 Finish time: _____
 
 Actual time needed to complete: _____
+
 #### Repository Configuration:
 
 - [x] Create a new repo called `city-explorer` on GitHub, initialized with no files.
@@ -75,6 +73,7 @@ city-explorer
    └── src/
       |__App.js
 ```
+
 ## ⚙️ **Locations** : Feature Two
 
 As a user of City Explorer, I want to enter the name of a location so that I can see the exact latitude and longitude of that location.
@@ -92,6 +91,7 @@ Finish time: _____
 
 Actual time needed to complete: _____
 ```
+
 ## ⚙️ **Map** : Feature Three
 
 As a user, I want to see a map of the city so that I can see the layout of the area I want to explore.
@@ -99,7 +99,6 @@ As a user, I want to see a map of the city so that I can see the layout of the a
 - [ ] **Given** that a user enters a valid location in the input
 - [ ] **When** the user clicks the "Explore!" button
 - [ ] **Then** the map of the city is displayed on the page.
-
 
 ```
 Estimate of time needed to complete: _____
@@ -110,6 +109,7 @@ Finish time: _____
 
 Actual time needed to complete: _____
 ```
+
 ## ⚙️ **Errors** : Feature Four
 
 As a user, I want clear messages if something goes wrong so I know if I need to make any changes or try again in a different manner.
@@ -145,6 +145,10 @@ Actual time needed to complete: _____
 
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 
-
-
 [Reflections ⇒](reflections.md)
+
+---
+
+This work by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/AL0YSI0US/" property="cc:attributionName" rel="cc:attributionURL">AL0YSI0US</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />
+
+This license lets others distribute, remix, adapt, and build upon your work, even commercially, as long as they credit you for the original creation. This is the most accommodating of licenses offered. Recommended for maximum dissemination and use of licensed materials.
