@@ -1,7 +1,7 @@
 // R E A C T
 import React from 'react';
 // A X I O S
-import axios from 'axios'
+// import axios from 'axios'
 // M A N D A L A
 import logo from './mandalaLeap.jpg';
 // C O M P O N E N T S
