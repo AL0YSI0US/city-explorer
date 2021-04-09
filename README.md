@@ -33,7 +33,7 @@
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. 
 -->
 
-## ⏰ T I M E . E S T I M A T E S 
+## ⏰ T I M E . E S T I M A T E S
 
 ## ⚙️ **React repository & API keys** : Feature One
 
@@ -132,6 +132,8 @@ Actual time needed to complete: _____
 
 ## ❤️ Credit and Collaborations 👥
 
+Shout out to { `Lorenzo` } for helping me understand form handling on a deeper level. 
+
 ## Resources
 
 + [NPM JS](https://www.npmjs.com/package/axios)
@@ -144,6 +146,7 @@ Actual time needed to complete: _____
 + seattle-code-301n21/class-05/demo/[**city-explorer-react**](https://github.com/codefellows/seattle-code-301n21/tree/main/class-05/demo/city-explorer-react)/
 + seattle-code-301n21/class-05/demo/city-[**demo-city-explorer**](https://github.com/codefellows/seattle-code-301n21/tree/main/class-05/demo/demo-city-explorer)/
 + seattle-code-301n21/class-05/demo/city-**[passing-functions](https://github.com/codefellows/seattle-code-301n21/tree/main/class-03/demo/passing-functions)**/src/
++ [locationiq - docs](https://locationiq.com/docs)
 
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 
