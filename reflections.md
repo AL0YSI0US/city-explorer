@@ -31,3 +31,12 @@ city-explorer-api
 ```
 
 [⇐ README.md](README.md)
+
+```JSX
+// Code Removed from App.js
+{this.state.error ? <h3>{this.state.error}</h3> : ''}
+{/* Update the page with the returned `display_name`, latitude, and    longitude, displayed nicely in an appropriate Bootstrap component. */}
+{this.state.cityData.lat !== undefined ?} <Jumbotron>
+<h3>{this.state.cityData.display_name}</h3>
+<h5>{this.state.cityData.lat}, {this.state.cityData.lon}</h5> </Jumbotron> 
+```
