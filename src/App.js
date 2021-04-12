@@ -4,7 +4,8 @@ import React from 'react';
 // A X I O S
 import axios from 'axios';
 // C O M P O N E N T S ?
-import Search from './Search.js';
+import Header from './Components/Header/Header;'
+import Search from './Components/Search/Search.js';
 // F O O T E R ?
 // C S S
 import './App.css';
@@ -23,7 +24,10 @@ class App extends React.Component {
     render() {
       // console.log(this.props)
       return (
-       <Search />
+      <>
+        <Header />
+        <Search />
+      </>
     );
   }
 }
