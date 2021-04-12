@@ -16,20 +16,48 @@ class App extends React.Component {
     super(props);
     this.state = {
       haveSearched: false,
-      city: '',
+      cityInput: '',
       cityData: {},
       errors: [],
     };
+  }
 
+  showSearch = () => {
+    this.setState({haveSearched: false});
+  }
 
-    render() {
-      // console.log(this.props)
-      return (
+  handleSearch = async(cityInput) => {
+    if(!cityInput) {
+      console.warn('No City Selected');
+    } else {
+      try {
+        // TODO: Handle searches from multiple regions
+        let response = await axios.get(`https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATION_IQ_API_KEY}&q=${cityInput}&format=json&limit=1`);
+        this.setState({
+          haveSearched: true,
+          cityInput: cityInput,
+          cityData: response.data[0],
+        });
+      } catch (err) {
+        console.log(err.response);
+        this.setState({
+          errors: [{status: err.response.status, errorMsg: err.response.data.error}],
+          haveSearched: false,
+        });
+      }
+    }
+  }
+
+  render() {
+    return (
       <>
         <Header />
-        <City />
-        <Search />
-        <Footer />
+        {this.state.haveSearched && this.state.errors.length === 0 ? 
+          <City handleShowSearch={this.showSearch} cityData={this.state.cityData} /> : 
+          this.state.errors.length !== 0 ?
+          <Error handleSearch={this.handleSearch} errors={this.state.errors} /> :
+          <Search handleSearch={this.handleSearch} />}
+          <Footer />
       </>
     );
   }
