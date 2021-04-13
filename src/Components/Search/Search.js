@@ -1,20 +1,22 @@
 import React from 'react';
 // B O O T S T R A P P I N ~
-import Form from 'react-bootstrap';
-import Button from 'react-bootstrap';
-// C S S 
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+// C S S
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Search.css';
 
-class App extends React.Component {
+class Search extends React.Component {
   constructor(props) {
     super(props);
-    this.textInput = React.createRef();
-  };
+    this.state = { 
+      textInput : React.createRef()
+    };
+  }
 
   handleSubmit = (event) => {
     event.preventDefault();
-    this.props.handleSearch(this.textInput.current.value);
+    this.props.handleSearch(this.state.textInput.current.value);
   }
 
   render() {
@@ -22,7 +24,7 @@ class App extends React.Component {
       <Form onSubmit={this.handleSubmit}>
         <Form.Group>
           <Form.Label>Enter City to Search For</Form.Label>
-          <Form.Control placeholder="Enter city to search..." size="lg" type="text" ref={this.textInput} />
+          <Form.Control placeholder="Enter city to search..." size="lg" type="text" ref={this.state.textInput} />
         </Form.Group>
         <Button variant="primary" type="submit">
           Explore!
@@ -32,7 +34,8 @@ class App extends React.Component {
   }
 }
 
-export default Search
+export default Search;
+
 
 
 

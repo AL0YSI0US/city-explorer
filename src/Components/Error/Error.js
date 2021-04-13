@@ -1,18 +1,27 @@
-  // T R Y  &  C A T C H
-  // Write code to check for an error, if one is present: do something clever with it
+import React from 'react';
+// B O O T S T R A P P I N ~
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from 'react-bootstrap/Button';
+import Jumbotron  from 'react-bootstrap/Jumbotron';
 
-  // try to do something
-  try {
-    // Request and wait for city LocationIQ data Limit 1 `&limit=1`
-    // LocationIQ Docs: https://locationiq.com/docs
-    let cityData = await axios.get(`https://eu1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATIONIQ_KEY}&q=${citySearched}&format=json&limit=1`);
-    console.log(cityData);
-    let cityICareAboutData = cityData.data[0];
-    this.setState({
-      cityData: cityICareAboutData
-    });
-    // write a catch statement for if something goes wrong
-  } catch (err) {
-    console.log(err);
-    this.setState({ error: `${err.message}: ${err.response.data.error}` });
+import './Error.css';
+
+class Error extends React.Component {
+  refreshPage = () => {
+    window.location.reload(); 
   }
+
+  render() {
+    return (
+      <Jumbotron fluid>
+        <h1>Something tells me that was not on purpose...</h1>
+        <p>{this.props.errors[0].status} - {this.props.errors[0].errorMsg}</p>
+        <Button onClick={this.refreshPage} variant="primary" type="submit">
+          Try your search again
+        </Button>
+      </Jumbotron>
+    );
+  }
+}
+
+export default Error;  

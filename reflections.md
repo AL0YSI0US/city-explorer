@@ -1,6 +1,6 @@
 # Reflections
 
-- [ ] The Demonstrations often lack supplemental documentation
+- [ ] The Demonstrations lack any accompanying supplemental documentation
   - [ ] It is expected of the students to go back and pull out information from the videos
 - [ ] Trello or GitHub / honestly seeing both in full blown development mode setup like a sandbox should be the standard from the start.
   - [ ] sandbox : Trello in 102 { `outlines assignment requirements` }
@@ -8,14 +8,14 @@
   - [ ] sandbox : Github project board in 201 { `Used Collaboratively On Final Project` }
   - [ ] sandbox : Trello in 301 { `outlines assignment requirements` }
 - [ ] If I need to create an account on a new website there should be a step by step guide of images to follow, **this is a pretty standard accessibility need in any environment**.
-- [ ] Disability department??? Curiosity??? Does code fellows value accessibility? Do they know what the  general education standards are??
+- [ ] Disability department??? Curiosity??? Does code fellows value accessibility? Do they know what the general education standards are?? are we skating by or setting bars?
 - [ ] Obtain class materials within 24hrs of payment for any class
-- [ ] calsses should have no less than 2 to 3 weeks between them, students learners need rest and staff should be refining skills during this time. mentoring each other collaborating on advancements that better the learning environment etc
+- [ ] calsses should have no less than 2 to 3 weeks between them, students learners need rest and staff should be refining skills during this time. Be that mentoring each other collaborating on advancements that better the learning environment or resting themselves etc.
 
 ## Questions
 
-- [X] how do I print this tree in my ccommand line? { `Instructor Ryan answered this` }
-  - [X] CD into src to avoid displayin node modules
+- [X] how do I print this tree in my command line? { `Instructor Ryan answered this` }
+  - [X] CD into src to avoid displaying the node modules
 
 ```sh
 city-explorer-api
@@ -40,3 +40,27 @@ city-explorer-api
 <h3>{this.state.cityData.display_name}</h3>
 <h5>{this.state.cityData.lat}, {this.state.cityData.lon}</h5> </Jumbotron> 
 ```
+
+
+````javascript
+Code removed from App.js post lecture refactored and unused in Error.js 
+  
+// T R Y  &  C A T C H
+  // Write code to check for an error, if one is present: do something clever with it
+
+  // try to do something
+  try {
+    // Request and wait for city LocationIQ data Limit 1 `&limit=1`
+    // LocationIQ Docs: https://locationiq.com/docs
+    let cityData = await axios.get(`https://eu1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATIONIQ_KEY}&q=${citySearched}&format=json&limit=1`);
+    console.log(cityData);
+    let cityICareAboutData = cityData.data[0];
+    this.setState({
+      cityData: cityICareAboutData
+    });
+    // write a catch statement for if something goes wrong
+  } catch (err) {
+    console.log(err);
+    this.setState({ error: `${err.message}: ${err.response.data.error}` });
+  }
+````
