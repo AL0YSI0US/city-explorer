@@ -64,3 +64,6 @@ Code removed from App.js post lecture refactored and unused in Error.js
     this.setState({ error: `${err.message}: ${err.response.data.error}` });
   }
 ````
+ ## Error messages
+
+ **4-13-2021 16:57 :** The HTTP 401 Unauthorized client error status response code indicates that the request has not been applied because it lacks valid authentication credentials for the target resource.
