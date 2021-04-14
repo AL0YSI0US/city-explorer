@@ -9,7 +9,7 @@
 <!-- increment the patch/fix/version number if you make more commits past your first submission -->
 
 ## Overview
-
+![](https://github.com/AL0YSI0US/city-explorer/blob/main/Documentation/dataApiRequest.PNG?raw=true)
 <!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
 
 ## Getting Started
@@ -42,6 +42,7 @@
 
 ## ⚙️ **React repository & API keys** : Feature One
 
+```sh
 Estimate of time needed to complete: 4 hours
 
 Start time: 12:00
@@ -49,6 +50,7 @@ Start time: 12:00
 Finish time: 5:45
 
 Actual time needed to complete: 5 hrs 45 mins
+```
 
 #### Repository Configuration:
 
@@ -67,10 +69,6 @@ Actual time needed to complete: 5 hrs 45 mins
 - [X] Create an `.env` file: Your API key goes here for local development. Make sure this file is in your `.gitignore`.
 - [X] Add your API key to your Netlify deployment. Under "Site settings" > "Build & deploy" > "Environment", you need to add "Edit variables" to add your API key, giving it the same name you used in your local .env file.
 
-```sh
-                                 
-```
-
 ## ⚙️ **Locations** : Feature Two
 
 As a user of City Explorer, I want to enter the name of a location so that I can see the exact latitude and longitude of that location.
@@ -79,7 +77,7 @@ As a user of City Explorer, I want to enter the name of a location so that I can
 - [ ] **When** the user clicks the "Explore!" button
 - [ ] **Then** the latitude and longitude will be displayed on the page
 
-```
+```sh
 Estimate of time needed to complete: _____
 
 Start time: _____
@@ -97,7 +95,7 @@ As a user, I want to see a map of the city so that I can see the layout of the a
 - [ ] **When** the user clicks the "Explore!" button
 - [ ] **Then** the map of the city is displayed on the page.
 
-```
+```sh
 Estimate of time needed to complete: _____
 
 Start time: _____
@@ -115,7 +113,7 @@ As a user, I want clear messages if something goes wrong so I know if I need to 
 - [ ] **When** the user clicks the "Explore!" button
 - [ ] **Then** the user will receive an error message on the page and the data will not be rendered properly
 
-```
+```sh
 Estimate of time needed to complete: _____
 
 Start time: _____
@@ -137,15 +135,15 @@ Shout out to { `Tom` } for breaking down component handling for me.
 + [locationiq](https://locationiq.com/docs#search-forward-geocoding)
 + [Ignoring Files](https://docs.github.com/en/github/getting-started-with-github/ignoring-files) .gitignore / github docs
 + [A collection of useful .gitignore templates](https://github.com/github/gitignore) github / gitignore
-
   + *Specifically, the “Search / Forward GeoCoding” and “Static Maps” sections.*
 + seattle-code-301n21/class-04/[**in-form-ation**](https://github.com/codefellows/seattle-code-301n21/tree/main/class-04/demo/in-form-ation/src)/src
 + seattle-code-301n21/class-05/demo/[**city-explorer-react**](https://github.com/codefellows/seattle-code-301n21/tree/main/class-05/demo/city-explorer-react)/
 + seattle-code-301n21/class-05/demo/city-[**demo-city-explorer**](https://github.com/codefellows/seattle-code-301n21/tree/main/class-05/demo/demo-city-explorer)/
 + seattle-code-301n21/class-05/demo/city-**[passing-functions](https://github.com/codefellows/seattle-code-301n21/tree/main/class-03/demo/passing-functions)**/src/
 + [locationiq - docs](https://locationiq.com/docs)
-+ [Generating and locating npm-debug.log files](https://docs.npmjs.com/generating-and-locating-npm-debug.log-files)<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
-+
++ [Generating and locating npm-debug.log files](https://docs.npmjs.com/generating-and-locating-npm-debug.log-files)
+
+<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 
 [Reflections ⇒](reflections.md)
 
