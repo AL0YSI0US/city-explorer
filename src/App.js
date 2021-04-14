@@ -30,7 +30,6 @@ class App extends React.Component {
       if (!cityInput) {
         throw ('No City Has Been Selected');
       }
-      // TODO: Handle searches from multiple regions
       let response = await axios.get(`https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATION_IQ_API_KEY}&q=${cityInput}&format=json&limit=1`);
       this.setState({
         haveSearched: true,
@@ -50,7 +49,6 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <p>khsdkhdkhds</p>
         <Header />
         {
           this.state.haveSearched && this.state.errors.length === 0 ?
