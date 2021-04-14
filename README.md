@@ -9,7 +9,9 @@
 <!-- increment the patch/fix/version number if you make more commits past your first submission -->
 
 ## Overview
+
 ![](https://github.com/AL0YSI0US/city-explorer/blob/main/Documentation/dataApiRequest.PNG?raw=true)
+
 <!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
 
 ## Getting Started
@@ -17,7 +19,6 @@
 <!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
 
 ## Architecture
-
 
 **Languages :** JavaScript | HTML | CSS | Markdown
 
@@ -142,6 +143,7 @@ Shout out to { `Tom` } for breaking down component handling for me.
 + seattle-code-301n21/class-05/demo/city-**[passing-functions](https://github.com/codefellows/seattle-code-301n21/tree/main/class-03/demo/passing-functions)**/src/
 + [locationiq - docs](https://locationiq.com/docs)
 + [Generating and locating npm-debug.log files](https://docs.npmjs.com/generating-and-locating-npm-debug.log-files)
++ [Shadows Into Light](https://fonts.google.com/specimen/Shadows+Into+Light#standard-styles) - Google Fonts
 
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 

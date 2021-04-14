@@ -9,7 +9,7 @@ import './Search.css';
 class Search extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { 
+    this.state = {
       textInput : React.createRef()
     };
   }
@@ -23,8 +23,8 @@ class Search extends React.Component {
     return (
       <Form onSubmit={this.handleSubmit}>
         <Form.Group>
-          <Form.Label>Enter City to Search For</Form.Label>
-          <Form.Control placeholder="Enter city to search..." size="lg" type="text" ref={this.state.textInput} />
+          <Form.Label>Enter a city to begin</Form.Label>
+          <Form.Control placeholder="where would you like to explore?..." size="lg" type="text" ref={this.state.textInput} />
         </Form.Group>
         <Button variant="primary" type="submit">
           Explore!

@@ -1,0 +1,10 @@
+label.form-label {
+  font-family: 'Recursive', sans-serif;
+  font-size: 18px;
+}
+input.form-control-lg {
+  /* width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-content: center; */
+}

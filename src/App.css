@@ -1,7 +1,11 @@
 .App {
   text-align: center;
 }
-
+* {
+  text-align: center;
+  background-color: #22515f;
+  color: aliceblue;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -16,3 +20,13 @@
 .App-link {
   color: #61dafb;
 }
+img {
+  border-radius: 5px;
+}
+h2 {
+  font-family: 'Recursive', sans-serif;
+}
+h3{
+font-family: 'Shadows Into Light', cursive;
+}
+
