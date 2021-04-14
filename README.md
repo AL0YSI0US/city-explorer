@@ -18,6 +18,11 @@
 
 ## Architecture
 
+
+**Languages :** JavaScript | HTML | CSS | Markdown
+
+**Libraries :** Axios | LocationIq | React / Bootstrap |
+
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
 
 ## Change Log
@@ -63,17 +68,7 @@ Actual time needed to complete: 5 hrs 45 mins
 - [X] Add your API key to your Netlify deployment. Under "Site settings" > "Build & deploy" > "Environment", you need to add "Edit variables" to add your API key, giving it the same name you used in your local .env file.
 
 ```sh
-                           File configuration map
-
-city-explorer
-   ├── .env
-   ├── .gitignore
-   ├── package-lock.json
-   ├── package.json
-   ├── README.md
-   ├── public/
-   └── src/
-      |__App.j
+                                 
 ```
 
 ## ⚙️ **Locations** : Feature Two
@@ -132,7 +127,9 @@ Actual time needed to complete: _____
 
 ## ❤️ Credit and Collaborations 👥
 
-Shout out to { `Lorenzo` } for helping me understand form handling on a deeper level. 
+Shout out to { `Lorenzo` } for helping me understand form handling on a deeper level.
+
+Shout out to { `Tom` } for breaking down component handling for me.
 
 ## Resources
 
@@ -147,8 +144,8 @@ Shout out to { `Lorenzo` } for helping me understand form handling on a deeper l
 + seattle-code-301n21/class-05/demo/city-[**demo-city-explorer**](https://github.com/codefellows/seattle-code-301n21/tree/main/class-05/demo/demo-city-explorer)/
 + seattle-code-301n21/class-05/demo/city-**[passing-functions](https://github.com/codefellows/seattle-code-301n21/tree/main/class-03/demo/passing-functions)**/src/
 + [locationiq - docs](https://locationiq.com/docs)
-
-<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
++ [Generating and locating npm-debug.log files](https://docs.npmjs.com/generating-and-locating-npm-debug.log-files)<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
++
 
 [Reflections ⇒](reflections.md)
 
