@@ -19,7 +19,9 @@
 
 **Languages :** JavaScript | HTML | CSS | Markdown
 
-**Libraries :** Axios | LocationIq | React / Bootstrap 
+**Libraries :** Axios | LocationIq | React / Bootstrap
+
+**Tools :** Trello | Github | VS Code / Netlify
 
 **Tools :** Trello | Github | VS Code / Netlify
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
@@ -76,7 +78,7 @@ As a user of City Explorer, I want to enter the name of a location so that I can
 
 - [X] **Given** that a user enters a valid location in the input
 - [X] **When** the user clicks the "Explore!" button
-- [x] **Then** the latitude and longitude will be displayed on the page
+- [X] **Then** the latitude and longitude will be displayed on the page
 
 ```sh
 Estimate of time needed to complete: 120 minutes
@@ -110,9 +112,9 @@ Actual time needed to complete: 30 minutes
 
 As a user, I want clear messages if something goes wrong so I know if I need to make any changes or try again in a different manner.
 
-- [x] **Given** that a user does not enter a valid location (eg: empty string) in the input
-- [x] **When** the user clicks the "Explore!" button
-- [x] **Then** the user will receive an error message on the page and the data will not be rendered properly
+- [X] **Given** that a user does not enter a valid location (eg: empty string) in the input
+- [X] **When** the user clicks the "Explore!" button
+- [X] **Then** the user will receive an error message on the page and the data will not be rendered properly
 
 ```sh
 Estimate of time needed to complete: 120 minutes
