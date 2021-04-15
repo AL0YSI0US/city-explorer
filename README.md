@@ -1,32 +1,32 @@
-# 🗺️ city-explorer
+# 🗺️ city-explorer ![cs](https://img.shields.io/github/license/AL0YSI0US/city-explorer) ![open-pr](https://img.shields.io/github/issues-pr-raw/AL0YSI0US/city-explorer) ![closed-pr](https://img.shields.io/github/issues-pr-closed/AL0YSI0US/city-explorer)
 
 **Author**: Aloysious
 
-**Version**: 1.2.2
+**Version**: 2.2.2
 
 + [{ `city-explorer Trello Project Board` }](https://trello.com/b/0jJjZi3c/city-explorer-trello-board)
-
 <!-- increment the patch/fix/version number if you make more commits past your first submission -->
 
 ## Overview
 
 ![](https://github.com/AL0YSI0US/city-explorer/blob/main/Documentation/dataApiRequest.PNG?raw=true)
-
 <!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
 
 ## Getting Started
-
 <!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
 
 ## Architecture
 
 **Languages :** JavaScript | HTML | CSS | Markdown
 
-**Libraries :** Axios | LocationIq | React / Bootstrap |
+**Libraries :** Axios | LocationIq | React / Bootstrap 
 
+**Tools :** Trello | Github | VS Code / Netlify
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
 
 ## Change Log
+
+04-14-2021 11:30pm - **Re-deployment on Netlyify** : https://confident-thompson-632e1c.netlify.app/
 
 04-14-2021 5:17pm - **Re-deployment on Netlyify** : https://confident-thompson-632e1c.netlify.app/
 
@@ -35,13 +35,11 @@
 04-07-2021 11:22pm - **Launched on Netlyify** : https://confident-thompson-632e1c.netlify.app/
 
 04-06-2021 9:22pm - **Repository Created** : https://github.com/AL0YSI0US/city-explorer
-
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
-
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. 
 -->
 
-## ⏰ T I M E . E S T I M A T E S
+<h2 align="center">⏰ T I M E . E S T I M A T E S ⏰</h2>
 
 ## ⚙️ **React repository & API keys** : Feature One
 
@@ -78,16 +76,16 @@ As a user of City Explorer, I want to enter the name of a location so that I can
 
 - [X] **Given** that a user enters a valid location in the input
 - [X] **When** the user clicks the "Explore!" button
-- [ ] **Then** the latitude and longitude will be displayed on the page
+- [x] **Then** the latitude and longitude will be displayed on the page
 
 ```sh
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 120 minutes
 
-Start time: _____
+Start time: 12:00 
 
-Finish time: _____
+Finish time: 4:20
 
-Actual time needed to complete: _____
+Actual time needed to complete: 240 minutes
 ```
 
 ## ⚙️ **Map** : Feature Three
@@ -99,40 +97,42 @@ As a user, I want to see a map of the city so that I can see the layout of the a
 - [X] **Then** the map of the city is displayed on the page.
 
 ```sh
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 30 minutes
 
-Start time: _____
+Start time: 9:00
 
-Finish time: _____
+Finish time: 9:30
 
-Actual time needed to complete: _____
+Actual time needed to complete: 30 minutes
 ```
 
 ## ⚙️ **Errors** : Feature Four
 
 As a user, I want clear messages if something goes wrong so I know if I need to make any changes or try again in a different manner.
 
-- [ ] **Given** that a user does not enter a valid location (eg: empty string) in the input
-- [ ] **When** the user clicks the "Explore!" button
-- [ ] **Then** the user will receive an error message on the page and the data will not be rendered properly
+- [x] **Given** that a user does not enter a valid location (eg: empty string) in the input
+- [x] **When** the user clicks the "Explore!" button
+- [x] **Then** the user will receive an error message on the page and the data will not be rendered properly
 
 ```sh
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 120 minutes
 
-Start time: _____
+Start time: 12:00
 
-Finish time: _____
+Finish time: 2:00
 
-Actual time needed to complete: _____
+Actual time needed to complete: 120 minutes
 ```
 
-## ❤️ Credit and Collaborations 👥
+<h2 align="center">❤️ Credit and Collaborations 👥</h2>
 
 Shout out to { `Lorenzo` } for helping me understand form handling on a deeper level.
 
 Shout out to { `Tom` } for breaking down component handling for me.
 
 Shout out to { `TA Chance` } for working with me on degugging my code after I broke it down into seperate components.
+
+Shout out to { `TA Joe` } for helping me make sense of accessing / displaying error messages.
 
 ## Resources
 
@@ -149,8 +149,7 @@ Shout out to { `TA Chance` } for working with me on degugging my code after I br
 + [Generating and locating npm-debug.log files](https://docs.npmjs.com/generating-and-locating-npm-debug.log-files)
 + [{ `Shadows Into Light` }](https://fonts.google.com/specimen/Shadows+Into+Light#standard-styles)  - Google Fonts
 + [{ `Recursive` }](https://fonts.google.com/specimen/Recursive) - Google Fonts
-
-span
++ [{ `Press Start 2P` }](https://fonts.google.com/specimen/Press+Start+2P) - Google Fonts
 
 [Reflections ⇒](reflections.md)
 
