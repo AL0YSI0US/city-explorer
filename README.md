@@ -1,4 +1,4 @@
-# 🗺️ city-explorer ![cs](https://img.shields.io/github/license/AL0YSI0US/city-explorer) ![open-pr](https://img.shields.io/github/issues-pr-raw/AL0YSI0US/city-explorer) ![closed-pr](https://img.shields.io/github/issues-pr-closed/AL0YSI0US/city-explorer)
+# 🗺️ city-explorer ![open-pr](https://img.shields.io/github/issues-pr-raw/AL0YSI0US/city-explorer) ![closed-pr](https://img.shields.io/github/issues-pr-closed/AL0YSI0US/city-explorer)
 
 **Author**: Aloysious
 
