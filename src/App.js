@@ -18,7 +18,7 @@ class App extends React.Component {
       haveSearched: false,
       cityInput: '',
       cityData: {},
-      errors: '',
+      errors: [],
     };
   }
 
