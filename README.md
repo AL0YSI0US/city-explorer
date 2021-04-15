@@ -9,7 +9,9 @@
 <!-- increment the patch/fix/version number if you make more commits past your first submission -->
 
 ## Overview
+
 ![](https://github.com/AL0YSI0US/city-explorer/blob/main/Documentation/dataApiRequest.PNG?raw=true)
+
 <!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
 
 ## Getting Started
@@ -18,7 +20,6 @@
 
 ## Architecture
 
-
 **Languages :** JavaScript | HTML | CSS | Markdown
 
 **Libraries :** Axios | LocationIq | React / Bootstrap |
@@ -26,6 +27,8 @@
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
 
 ## Change Log
+
+04-14-2021 5:17pm - **Re-deployment on Netlyify** : https://confident-thompson-632e1c.netlify.app/
 
 04-07-2021 11:22pm - **Re-deployment on Netlyify** : https://confident-thompson-632e1c.netlify.app/
 
@@ -73,8 +76,8 @@ Actual time needed to complete: 5 hrs 45 mins
 
 As a user of City Explorer, I want to enter the name of a location so that I can see the exact latitude and longitude of that location.
 
-- [ ] **Given** that a user enters a valid location in the input
-- [ ] **When** the user clicks the "Explore!" button
+- [X] **Given** that a user enters a valid location in the input
+- [X] **When** the user clicks the "Explore!" button
 - [ ] **Then** the latitude and longitude will be displayed on the page
 
 ```sh
@@ -91,9 +94,9 @@ Actual time needed to complete: _____
 
 As a user, I want to see a map of the city so that I can see the layout of the area I want to explore.
 
-- [ ] **Given** that a user enters a valid location in the input
-- [ ] **When** the user clicks the "Explore!" button
-- [ ] **Then** the map of the city is displayed on the page.
+- [X] **Given** that a user enters a valid location in the input
+- [X] **When** the user clicks the "Explore!" button
+- [X] **Then** the map of the city is displayed on the page.
 
 ```sh
 Estimate of time needed to complete: _____
@@ -129,6 +132,8 @@ Shout out to { `Lorenzo` } for helping me understand form handling on a deeper l
 
 Shout out to { `Tom` } for breaking down component handling for me.
 
+Shout out to { `TA Chance` } for working with me on degugging my code after I broke it down into seperate components.
+
 ## Resources
 
 + [NPM JS](https://www.npmjs.com/package/axios)
@@ -142,8 +147,10 @@ Shout out to { `Tom` } for breaking down component handling for me.
 + seattle-code-301n21/class-05/demo/city-**[passing-functions](https://github.com/codefellows/seattle-code-301n21/tree/main/class-03/demo/passing-functions)**/src/
 + [locationiq - docs](https://locationiq.com/docs)
 + [Generating and locating npm-debug.log files](https://docs.npmjs.com/generating-and-locating-npm-debug.log-files)
++ [{ `Shadows Into Light` }](https://fonts.google.com/specimen/Shadows+Into+Light#standard-styles)  - Google Fonts
++ [{ `Recursive` }](https://fonts.google.com/specimen/Recursive) - Google Fonts
 
-<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
+span
 
 [Reflections ⇒](reflections.md)
 

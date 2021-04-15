@@ -1,7 +1,11 @@
 .App {
   text-align: center;
 }
-
+* {
+  text-align: center;
+  background-color: #22515f;
+  color: aliceblue;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -16,3 +20,26 @@
 .App-link {
   color: #61dafb;
 }
+img {
+  border-radius: 5px;
+}
+h2 {
+  font-family: 'Recursive', sans-serif;
+  text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+  margin-top: 10px;
+}
+h3{
+font-family: 'Shadows Into Light', cursive;
+text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+
+/* generrated with : https://cssgenerator.org/box-shadow-css-generator.html {absorbed from : Bryants wisdom} */
+img {
+  border-radius: 35px 35px 35px 35px;
+  -webkit-border-radius: 35px 35px 35px 35px;
+  -moz-border-radius: 35px 35px 35px 35px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+

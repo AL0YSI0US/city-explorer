@@ -17,7 +17,7 @@ class App extends React.Component {
       haveSearched: false,
       cityInput: '',
       cityData: {},
-      errors: [],
+      errors: '',
     };
   }
 
@@ -26,20 +26,22 @@ class App extends React.Component {
   }
 
   handleSearch = async (cityInput) => {
+    console.log('searched', cityInput);
     try {
       if (!cityInput) {
         throw ('No City Has Been Selected');
       }
-      let response = await axios.get(`https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATION_IQ_API_KEY}&q=${cityInput}&format=json&limit=1`);
+      let locationResponse = await axios.get(`https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATIONIQ_KEY}&q=${cityInput}&format=json&limit=1`);
+      console.log(locationResponse);
       this.setState({
         haveSearched: true,
         cityInput: cityInput,
-        cityData: response.data[0],
+        cityData: locationResponse.data[0],
       });
     } catch (err) {
-      console.log(err.response);
+      console.log(err);
       this.setState({
-        errors: [{ status: err.response.status, errorMsg: err.response.data.error }],
+        errors: err,
         haveSearched: false,
       });
     }
