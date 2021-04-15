@@ -1,20 +1,20 @@
 # Reflections
 
-- [ ] The Demonstrations lack accompanying supplemental documentation
-  - [ ] It is expected of the students to go back and pull out information from the videos
-    - [x] timestamps added partial need met
-    - [ ] still want documentation specific to each lab
-- [ ] Trello or GitHub / honestly seeing both in full blown development mode setup like a sandbox should be the standard from the start.
-  - [ ] sandbox : Trello in 102 { `outlines assignment requirements` }
-  - [ ] sandbox : Trello in 201 { `outlines assignment requirements` }
-  - [ ] sandbox : Github project board in 201 { `Used Collaboratively On Final Project` }
-  - [ ] sandbox : Trello in 301 { `outlines assignment requirements` }
-- [ ] If I need to create an account on a new website there should be a step by step guide of images to follow, **this is a pretty standard accessibility need in any environment**.
-  - [x] will meet with John over a series of dates to speak content
-- [ ] Disability department??? Curiosity??? Does code fellows value accessibility? Do they know what the general education standards are?? are we skating by or setting bars?
-  - [x] will meet with John over a series of dates to speak content
-- [ ] Obtain class materials within 24hrs of payment for any class
-- [ ] calsses should have no less than 2 to 3 weeks between them, students learners need rest and staff should be refining skills during this time. Be that mentoring each other collaborating on advancements that better the learning environment or resting themselves etc.
+- The Demonstrations lack accompanying supplemental documentation
+  - It is expected of the students to go back and pull out information from the videos
+    - timestamps added - this is helpful
+    - still want documentation specific to each lab
+- Trello or GitHub / honestly seeing both in full blown development mode setup like a sandbox should be the standard from the start.
+  - sandbox : Trello in 102 { `outlines assignment requirements` }
+  - sandbox : Trello in 201 { `outlines assignment requirements` }
+  - sandbox : Github project board in 201 { `Used Collaboratively On Final Project` }
+  - sandbox : Trello in 301 { `outlines assignment requirements` }
+- If I need to create an account on a new website there should be a step by step guide of images to follow, **this is a pretty standard accessibility need in any environment**.
+  - will meet with John over a series of dates to speak content
+- Disability department??? Curiosity??? Does code fellows value accessibility? Do they know what the general education standards are?? are we skating by or setting bars?
+  - will meet with John over a series of dates to speak content
+- Obtain class materials within 24hrs of payment for any class (request)
+- calsses should have no less than 2 to 3 weeks between them, students learners need rest and staff should be refining skills during this time. Be that mentoring each other collaborating on advancements that better the learning environment or resting themselves etc. (request)
 
 ## Questions
 
@@ -45,7 +45,6 @@ city-explorer-api
 <h5>{this.state.cityData.lat}, {this.state.cityData.lon}</h5> </Jumbotron> 
 ```
 
-
 ````javascript
 Code removed from App.js post lecture refactored and unused in Error.js 
   
@@ -68,6 +67,7 @@ Code removed from App.js post lecture refactored and unused in Error.js
     this.setState({ error: `${err.message}: ${err.response.data.error}` });
   }
 ````
- ## Error messages
 
- **4-13-2021 16:57 :** The HTTP 401 Unauthorized client error status response code indicates that the request has not been applied because it lacks valid authentication credentials for the target resource.
+## Notable error messages
+
+**4-13-2021 16:57 :** The HTTP 401 Unauthorized client error status response code indicates that the request has not been applied because it lacks valid authentication credentials for the target resource.
