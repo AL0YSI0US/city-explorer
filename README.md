@@ -28,6 +28,8 @@
 
 ## Change Log
 
+04-14-2021 5:17pm - **Re-deployment on Netlyify** : https://confident-thompson-632e1c.netlify.app/
+
 04-07-2021 11:22pm - **Re-deployment on Netlyify** : https://confident-thompson-632e1c.netlify.app/
 
 04-07-2021 11:22pm - **Launched on Netlyify** : https://confident-thompson-632e1c.netlify.app/
@@ -74,8 +76,8 @@ Actual time needed to complete: 5 hrs 45 mins
 
 As a user of City Explorer, I want to enter the name of a location so that I can see the exact latitude and longitude of that location.
 
-- [ ] **Given** that a user enters a valid location in the input
-- [ ] **When** the user clicks the "Explore!" button
+- [X] **Given** that a user enters a valid location in the input
+- [X] **When** the user clicks the "Explore!" button
 - [ ] **Then** the latitude and longitude will be displayed on the page
 
 ```sh
@@ -92,9 +94,9 @@ Actual time needed to complete: _____
 
 As a user, I want to see a map of the city so that I can see the layout of the area I want to explore.
 
-- [ ] **Given** that a user enters a valid location in the input
-- [ ] **When** the user clicks the "Explore!" button
-- [ ] **Then** the map of the city is displayed on the page.
+- [X] **Given** that a user enters a valid location in the input
+- [X] **When** the user clicks the "Explore!" button
+- [X] **Then** the map of the city is displayed on the page.
 
 ```sh
 Estimate of time needed to complete: _____
@@ -130,6 +132,8 @@ Shout out to { `Lorenzo` } for helping me understand form handling on a deeper l
 
 Shout out to { `Tom` } for breaking down component handling for me.
 
+Shout out to { `TA Chance` } for working with me on degugging my code after I broke it down into seperate components.
+
 ## Resources
 
 + [NPM JS](https://www.npmjs.com/package/axios)
@@ -143,9 +147,10 @@ Shout out to { `Tom` } for breaking down component handling for me.
 + seattle-code-301n21/class-05/demo/city-**[passing-functions](https://github.com/codefellows/seattle-code-301n21/tree/main/class-03/demo/passing-functions)**/src/
 + [locationiq - docs](https://locationiq.com/docs)
 + [Generating and locating npm-debug.log files](https://docs.npmjs.com/generating-and-locating-npm-debug.log-files)
-+ [Shadows Into Light](https://fonts.google.com/specimen/Shadows+Into+Light#standard-styles) - Google Fonts
++ [{ `Shadows Into Light` }](https://fonts.google.com/specimen/Shadows+Into+Light#standard-styles)  - Google Fonts
++ [{ `Recursive` }](https://fonts.google.com/specimen/Recursive) - Google Fonts
 
-<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
+span
 
 [Reflections ⇒](reflections.md)
 
