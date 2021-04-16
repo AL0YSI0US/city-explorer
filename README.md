@@ -5,14 +5,17 @@
 **Version**: 2.2.2
 
 + [{ `city-explorer Trello Project Board` }](https://trello.com/b/0jJjZi3c/city-explorer-trello-board)
+
 <!-- increment the patch/fix/version number if you make more commits past your first submission -->
 
 ## Overview
 
 ![](https://github.com/AL0YSI0US/city-explorer/blob/main/Documentation/dataApiRequest.PNG?raw=true)
+
 <!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
 
 ## Getting Started
+
 <!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
 
 ## Architecture
@@ -24,6 +27,7 @@
 **Tools :** Trello | Github | VS Code / Netlify
 
 **Tools :** Trello | Github | VS Code / Netlify
+
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
 
 ## Change Log
@@ -37,6 +41,7 @@
 04-07-2021 11:22pm - **Launched on Netlyify** : https://confident-thompson-632e1c.netlify.app/
 
 04-06-2021 9:22pm - **Repository Created** : https://github.com/AL0YSI0US/city-explorer
+
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. 
 -->
@@ -138,11 +143,17 @@ Shout out to { `TA Joe` } for helping me make sense of accessing / displaying er
 
 ## Resources
 
-+ [NPM JS](https://www.npmjs.com/package/axios)
-+ [locationiq](https://locationiq.com/docs#search-forward-geocoding)
-+ [Ignoring Files](https://docs.github.com/en/github/getting-started-with-github/ignoring-files) .gitignore / github docs
-+ [A collection of useful .gitignore templates](https://github.com/github/gitignore) github / gitignore
-  + *Specifically, the “Search / Forward GeoCoding” and “Static Maps” sections.*
+[NPM JS](https://www.npmjs.com/package/axios)
+
+[locationiq](https://locationiq.com/docs#search-forward-geocoding)
+
+[Ignoring Files](https://docs.github.com/en/github/getting-started-with-github/ignoring-files) .gitignore / github docs
+
+[A collection of useful .gitignore templates](https://github.com/github/gitignore) github / gitignore
+
+
+
++ *Specifically, the “Search / Forward GeoCoding” and “Static Maps” sections.*
 + seattle-code-301n21/class-04/[**in-form-ation**](https://github.com/codefellows/seattle-code-301n21/tree/main/class-04/demo/in-form-ation/src)/src
 + seattle-code-301n21/class-05/demo/[**city-explorer-react**](https://github.com/codefellows/seattle-code-301n21/tree/main/class-05/demo/city-explorer-react)/
 + seattle-code-301n21/class-05/demo/city-[**demo-city-explorer**](https://github.com/codefellows/seattle-code-301n21/tree/main/class-05/demo/demo-city-explorer)/
@@ -152,8 +163,12 @@ Shout out to { `TA Joe` } for helping me make sense of accessing / displaying er
 + [{ `Shadows Into Light` }](https://fonts.google.com/specimen/Shadows+Into+Light#standard-styles)  - Google Fonts
 + [{ `Recursive` }](https://fonts.google.com/specimen/Recursive) - Google Fonts
 + [{ `Press Start 2P` }](https://fonts.google.com/specimen/Press+Start+2P) - Google Fonts
++ [{ `Carosel | Form | Button | List Group` }](https://react-ootstrap.github.io/components/carousel/) - Bootstrap Components
+
+
 
 [Reflections ⇒](reflections.md)
+
 
 ---
 
