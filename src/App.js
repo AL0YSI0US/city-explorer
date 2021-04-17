@@ -21,10 +21,11 @@ class App extends React.Component {
       cityData: {},
       errors: [],
       cityName: '',
-      // recent params
+      // recent params licationIq
       latitude: '',
       longitude: '',
-      weatherInformation: [],
+      // recent params backend server : weathbit API
+      forecast: [],
     };
   }
 
@@ -40,6 +41,7 @@ class App extends React.Component {
       console.log('display name', locationResponse.data[0].display_name);
       console.log('latitude', locationResponse.data[0].lat);
       console.log('longitude', locationResponse.data[0].lon);
+
       this.setState({
         haveSearched: true,
         cityInput: cityInput,
@@ -62,16 +64,25 @@ class App extends React.Component {
   // const vs let [let allows you to change the data types wheras the data type cannot be altered in a const]
   // create a function that will get the weather data from our back end server
   // async await - axios GET call [to local host during development stage]
-  fetchWeather = async() => {
-    // local host will need to be placed in the .env file
-    // after heroku deployment update to the deployed url
-    // const dailyForecast = await axios.get(`${WEATHER_URL}?&lat=0000&lon=0000`);
-    const dailyForecast = await axios.get(`http://localhost:3002/weather`);
-    console.log('This is the daily forecast:', dailyForecast.data);
-    // updating the state
-    this.setState({weatherInformation: dailyForecast.data});
+  fetchWeather = async () => {
+    try {
+      // local host will need to be placed in the .env file
+      // after heroku deployment update to the deployed url
+      // const dailyForecast = await axios.get(`${WEATHER_URL}?&lat=0000&lon=0000`);
+      const dailyForecast = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/weather`);
+      console.log('This is the daily forecast:', dailyForecast.data);
+      // updating the state
+      console.log(`setting state here:`);
+      this.setState({
+        forecast: dailyForecast.data
+      });
+    } catch (error) {
+      this.setState({ errors: `${error.message}` });
+      console.log('Error Found:', error.message);
+    }
   }
 
+  // fetchMovies = async() => {
   render() {
     console.log(this.state);
     return (
@@ -81,10 +92,10 @@ class App extends React.Component {
           this.state.haveSearched && this.state.errors.length === 0 ?
             <City handleShowSearch={this.showSearch} cityData={this.state.cityData} /> :
             this.state.errors.length !== 0 ?
-              <Error handleSearch={this.handleSearch} errors={this.state.errors} /> :
+              <Error handleSearch={this.handleSearch} errors={this.state.errors} error={this.state.error}/> :
               <Search handleSearch={this.handleSearch} />
         }
-        <Weather handleShowSearch={this.showSearch} weatherInformation={this.state.weatherInformation} />
+        <Weather handleShowSearch={this.showSearch} forecast={this.state.forecast} />
         <Footer />
       </>
     );
