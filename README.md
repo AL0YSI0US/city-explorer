@@ -32,6 +32,8 @@
 
 ## Change Log
 
+04-17-2021 6:30pm - **Re-deployment on Netlyify** : https://confident-thompson-632e1c.netlify.app/
+
 04-14-2021 11:30pm - **Re-deployment on Netlyify** : https://confident-thompson-632e1c.netlify.app/
 
 04-14-2021 5:17pm - **Re-deployment on Netlyify** : https://confident-thompson-632e1c.netlify.app/
@@ -140,6 +142,10 @@ Shout out to { `Tom` } for breaking down component handling for me.
 Shout out to { `TA Chance` } for working with me on degugging my code after I broke it down into seperate components.
 
 Shout out to { `TA Joe` } for helping me make sense of accessing / displaying error messages.
+
+Shout out to { `Daniel` } for helping me brainstorm error handling
+
+Shout out to { `Michelle` } for helping me debug/ implement my error messages
 
 ## Resources
 
