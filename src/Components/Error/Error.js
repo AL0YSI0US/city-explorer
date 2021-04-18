@@ -14,8 +14,7 @@ class Error extends React.Component {
     return (
       <Jumbotron>
         <h1>Something tells me that was not on purpose. . .</h1>
-        <p>{this.props.errors.message}</p>
-
+        <p>{this.props.errors}</p>
         <Button onClick={this.refreshPage} variant="danger" type="submit">
           Try your search again
         </Button>
