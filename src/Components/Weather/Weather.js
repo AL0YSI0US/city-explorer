@@ -38,10 +38,3 @@ class Weather extends React.Component {
 
 
 export default Weather;
-
-// TODO:
-// display the return results to the viewer
-
-// display_name
-// lat
-// lon

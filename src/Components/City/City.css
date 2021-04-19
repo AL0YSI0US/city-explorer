@@ -1,12 +1,9 @@
+/*-------------------------------------------------------------------------City Explorer */
 h1 {
   font-family: 'Shadows Into Light', cursive;
-  font-size: 42px;
+  font-size: 50px;
   font-weight: bold;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
 }
-/* div.card {
-  background-color: #22515f;
-  border: none;
-} */
