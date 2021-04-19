@@ -1,5 +1,6 @@
 import React from 'react';
 // B O O T S T R A P P I N ~
+import Container from 'react-bootstrap/Container';
 // A X I O S
 import axios from 'axios';
 // C O M P O N E N T S
@@ -70,7 +71,7 @@ class App extends React.Component {
       // after heroku deployment update to the deployed url
       // const dailyForecast = await axios.get(`${WEATHER_URL}?&lat=0000&lon=0000`);
       const dailyForecast = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/weather`);
-      console.log('This is the daily forecast:', dailyForecast.data);
+      // console.log('This is the daily forecast:', dailyForecast.data);
       // updating the state
       console.log(`setting state here:`);
       this.setState({
@@ -92,10 +93,12 @@ class App extends React.Component {
           this.state.haveSearched && this.state.errors.length === 0 ?
             <City handleShowSearch={this.showSearch} cityData={this.state.cityData} /> :
             this.state.errors.length !== 0 ?
-              <Error handleSearch={this.handleSearch} errors={this.state.errors} error={this.state.error}/> :
+              <Error handleSearch={this.handleSearch} errors={this.state.errors} error={this.state.error} /> :
               <Search handleSearch={this.handleSearch} />
         }
-        <Weather handleShowSearch={this.showSearch} forecast={this.state.forecast} />
+        <Container>
+          <Weather handleShowSearch={this.showSearch} forecast={this.state.forecast} />
+        </Container>
         <Footer />
       </>
     );

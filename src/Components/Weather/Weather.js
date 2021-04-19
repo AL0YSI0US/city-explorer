@@ -12,7 +12,7 @@ class Weather extends React.Component {
       return ('');
     }
     return (
-      <Table striped bordered hover variant="sm">
+      <Table striped bordered hover variant="sm" fluid>
         <thead>
           <tr>
             <th>Date</th>
@@ -38,10 +38,3 @@ class Weather extends React.Component {
 
 
 export default Weather;
-
-// TODO:
-// display the return results to the viewer
-
-// display_name
-// lat
-// lon

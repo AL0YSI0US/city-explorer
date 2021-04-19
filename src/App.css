@@ -16,17 +16,21 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+/*-------------------------------------------------------------------------Optional hyperlink colorchange  */
 .App-link {
   color: #61dafb;
 }
+/*-------------------------------------------------------------------------MAP RENDERS HERE  */
 img {
   border-radius: 5px;
+  /* height: 60%; */
+  margin-top: 20px;
 }
 h2 {
   font-family: 'Shadows Into Light', cursive;
   text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 h3{
 font-family: 'Shadows Into Light', cursive;
@@ -44,4 +48,7 @@ img {
   margin-bottom: 40px;
 }
 
-
+.form-control-lg {
+  display: inline-block;
+  width: 400px;
+}
