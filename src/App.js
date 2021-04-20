@@ -70,8 +70,13 @@ class App extends React.Component {
       // local host will need to be placed in the .env file
       // after heroku deployment update to the deployed url
       // const dailyForecast = await axios.get(`${WEATHER_URL}?&lat=0000&lon=0000`);
-      const dailyForecast = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/weather`);
-      // console.log('This is the daily forecast:', dailyForecast.data);
+      const dailyForecast = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/weather`,
+        { params: {
+          lat: this.state.latitude,
+          lon: this.state.longitude
+        }
+        });
+      console.log('This is the daily forecast:', dailyForecast.data);
       // updating the state
       console.log(`setting state here:`);
       this.setState({
