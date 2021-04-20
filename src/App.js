@@ -9,6 +9,7 @@ import City from './Components/City/City.js';
 import Search from './Components/Search/Search.js';
 import Error from './Components/Error/Error.js';
 import Weather from './Components/Weather/Weather.js';
+// import Movies from './Components/Weather/Movies.js'; ]]]]]]]]]]]]]]]]]]
 import Footer from './Components/Footer/Footer.js';
 // C S S
 import './App.css';
@@ -27,6 +28,8 @@ class App extends React.Component {
       longitude: '',
       // recent params backend server : weathbit API
       forecast: [],
+      // recent params backend server : movie database API ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+      movieData: [],
     };
   }
 
@@ -51,6 +54,7 @@ class App extends React.Component {
         cityName: locationResponse.data[0].display_name,
         latitude: locationResponse.data[0].lat,
         longitude: locationResponse.data[0].lon,
+        // show movie data ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
       });
     } catch (err) {
       console.log(err);
@@ -71,16 +75,18 @@ class App extends React.Component {
       // after heroku deployment update to the deployed url
       // const dailyForecast = await axios.get(`${WEATHER_URL}?&lat=0000&lon=0000`);
       const dailyForecast = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/weather`,
-        { params: {
-          lat: this.state.latitude,
-          lon: this.state.longitude
-        }
+        {
+          params: {
+            lat: this.state.latitude,
+            lon: this.state.longitude
+          }
         });
       console.log('This is the daily forecast:', dailyForecast.data);
       // updating the state
       console.log(`setting state here:`);
       this.setState({
         forecast: dailyForecast.data
+        // movieData: 
       });
     } catch (error) {
       this.setState({ errors: `${error.message}` });
@@ -89,6 +95,15 @@ class App extends React.Component {
   }
 
   // fetchMovies = async() => {
+  //   const movieData = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/movies`,
+  //   {
+  //     params: {
+  //       key: this.state.what you name it in state,
+  //       key: this.state.hat you name it in state
+  //     }
+  //   });
+  // console.log('Movie stuffs?:', movieData.data);
+
   render() {
     console.log(this.state);
     return (
@@ -104,6 +119,9 @@ class App extends React.Component {
         <Container>
           <Weather handleShowSearch={this.showSearch} forecast={this.state.forecast} />
         </Container>
+        {/* <Container>
+          <Movies />
+        </Container> */}
         <Footer />
       </>
     );
