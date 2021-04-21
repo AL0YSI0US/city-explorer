@@ -8,7 +8,7 @@ import './Weather.css';
 class Weather extends React.Component {
 
   render() {
-    if (this.props.forecast.length === 0) {
+    if (this.props.forecastToSend.length === 0) {
       return ('');
     }
     return (
@@ -22,7 +22,7 @@ class Weather extends React.Component {
           </tr>
         </thead>
         <tbody>
-          {this.props.forecast.map((day, index) => (
+          {this.props.forecastToSend.map((day, index) => (
             <tr key={index}>
               <td>{day.date}</td>
               <td>{day.description}</td>

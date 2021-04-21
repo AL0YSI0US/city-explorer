@@ -32,8 +32,6 @@
 
 ## Change Log
 
-04-17-2021 6:30pm - **Re-deployment on Netlyify** : https://confident-thompson-632e1c.netlify.app/
-
 04-14-2021 11:30pm - **Re-deployment on Netlyify** : https://confident-thompson-632e1c.netlify.app/
 
 04-14-2021 5:17pm - **Re-deployment on Netlyify** : https://confident-thompson-632e1c.netlify.app/
@@ -133,7 +131,20 @@ Finish time: 2:00
 Actual time needed to complete: 120 minutes
 ```
 
-<h2 align="center">❤️ Credit and Collaborations 👥</h2>
+## ⚙️ **Movies** : Feature Five
+
+As a user of City Explorer, I want to see info about movies related to the city I searched, so that I can learn more about the destination.
+
+- [X] **Given** that a user enters a valid location in the input
+- [X] **When** the user clicks the "Explore!" button
+- [X] **Then** the top twenty movies set in the area will be displayed in the browser
+
+```shell
+span
+```
+
+
+<h2 align="center">❤️ Credit and Collaborations 👥
 
 Shout out to { `Lorenzo` } for helping me understand form handling on a deeper level.
 
@@ -142,10 +153,6 @@ Shout out to { `Tom` } for breaking down component handling for me.
 Shout out to { `TA Chance` } for working with me on degugging my code after I broke it down into seperate components.
 
 Shout out to { `TA Joe` } for helping me make sense of accessing / displaying error messages.
-
-Shout out to { `Daniel` } for helping me brainstorm error handling
-
-Shout out to { `Michelle` } for helping me debug/ implement my error messages
 
 ## Resources
 
@@ -156,8 +163,6 @@ Shout out to { `Michelle` } for helping me debug/ implement my error messages
 [Ignoring Files](https://docs.github.com/en/github/getting-started-with-github/ignoring-files) .gitignore / github docs
 
 [A collection of useful .gitignore templates](https://github.com/github/gitignore) github / gitignore
-
-
 
 + *Specifically, the “Search / Forward GeoCoding” and “Static Maps” sections.*
 + seattle-code-301n21/class-04/[**in-form-ation**](https://github.com/codefellows/seattle-code-301n21/tree/main/class-04/demo/in-form-ation/src)/src
@@ -171,10 +176,7 @@ Shout out to { `Michelle` } for helping me debug/ implement my error messages
 + [{ `Press Start 2P` }](https://fonts.google.com/specimen/Press+Start+2P) - Google Fonts
 + [{ `Carosel | Form | Button | List Group` }](https://react-ootstrap.github.io/components/carousel/) - Bootstrap Components
 
-
-
 [Reflections ⇒](reflections.md)
-
 
 ---
 

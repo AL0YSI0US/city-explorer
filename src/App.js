@@ -9,7 +9,7 @@ import City from './Components/City/City.js';
 import Search from './Components/Search/Search.js';
 import Error from './Components/Error/Error.js';
 import Weather from './Components/Weather/Weather.js';
-// import Movies from './Components/Weather/Movies.js'; ]]]]]]]]]]]]]]]]]]
+import Movies from './Components/Movies/Movies.js';
 import Footer from './Components/Footer/Footer.js';
 // C S S
 import './App.css';
@@ -23,13 +23,13 @@ class App extends React.Component {
       cityData: {},
       errors: [],
       cityName: '',
-      // recent params licationIq
+      // backend server : licationIq
       latitude: '',
       longitude: '',
-      // recent params backend server : weathbit API
+      // backend server : weathbit API
       forecast: [],
-      // recent params backend server : movie database API ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
-      movieData: [],
+      // backend server : movie database API
+      movies: [],
     };
   }
 
@@ -54,7 +54,6 @@ class App extends React.Component {
         cityName: locationResponse.data[0].display_name,
         latitude: locationResponse.data[0].lat,
         longitude: locationResponse.data[0].lon,
-        // show movie data ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
       });
     } catch (err) {
       console.log(err);
@@ -65,6 +64,7 @@ class App extends React.Component {
     }
     // suitable line break @ the end to call it in . . .
     this.fetchWeather();
+    this.fetchMovies();
   }
   // const vs let [let allows you to change the data types wheras the data type cannot be altered in a const]
   // create a function that will get the weather data from our back end server
@@ -86,7 +86,6 @@ class App extends React.Component {
       console.log(`setting state here:`);
       this.setState({
         forecast: dailyForecast.data
-        // movieData: 
       });
     } catch (error) {
       this.setState({ errors: `${error.message}` });
@@ -94,15 +93,25 @@ class App extends React.Component {
     }
   }
 
-  // fetchMovies = async() => {
-  //   const movieData = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/movies`,
-  //   {
-  //     params: {
-  //       key: this.state.what you name it in state,
-  //       key: this.state.hat you name it in state
-  //     }
-  //   });
-  // console.log('Movie stuffs?:', movieData.data);
+  fetchMovies = async () => {
+    try {
+      const movieInformation = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/movies`,
+        {
+          params: {
+            location: this.state.cityInput
+          }
+        });
+      console.log('This is the movie information:', movieInformation.data);
+      // updating the state
+      console.log(`setting state here:`);
+      this.setState({
+        movies: movieInformation.data
+      });
+    } catch (error) {
+      this.setState({ errors: `${error.message}` });
+      console.log('Error Found:', error.message);
+    }
+  }
 
   render() {
     console.log(this.state);
@@ -117,15 +126,14 @@ class App extends React.Component {
               <Search handleSearch={this.handleSearch} />
         }
         <Container>
-          <Weather handleShowSearch={this.showSearch} forecast={this.state.forecast} />
+          <Weather handleShowSearch={this.showSearch} forecastToSend={this.state.forecast} />
         </Container>
-        {/* <Container>
-          <Movies />
-        </Container> */}
+        <Container>
+          <Movies handleShowSearch={this.showSearch} movies={this.state.movies}/>
+        </Container>
         <Footer />
       </>
     );
   }
 }
-
 export default App;
