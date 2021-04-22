@@ -9,6 +9,7 @@ import City from './Components/City/City.js';
 import Search from './Components/Search/Search.js';
 import Error from './Components/Error/Error.js';
 import Weather from './Components/Weather/Weather.js';
+import Movies from './Components/Movies/Movies.js';
 import Footer from './Components/Footer/Footer.js';
 // C S S
 import './App.css';
@@ -22,11 +23,13 @@ class App extends React.Component {
       cityData: {},
       errors: [],
       cityName: '',
-      // recent params licationIq
+      // backend server : licationIq
       latitude: '',
       longitude: '',
-      // recent params backend server : weathbit API
+      // backend server : weathbit API
       forecast: [],
+      // backend server : movie database API
+      movies: [],
     };
   }
 
@@ -61,6 +64,7 @@ class App extends React.Component {
     }
     // suitable line break @ the end to call it in . . .
     this.fetchWeather();
+    this.fetchMovies();
   }
   // const vs let [let allows you to change the data types wheras the data type cannot be altered in a const]
   // create a function that will get the weather data from our back end server
@@ -70,8 +74,14 @@ class App extends React.Component {
       // local host will need to be placed in the .env file
       // after heroku deployment update to the deployed url
       // const dailyForecast = await axios.get(`${WEATHER_URL}?&lat=0000&lon=0000`);
-      const dailyForecast = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/weather`);
-      // console.log('This is the daily forecast:', dailyForecast.data);
+      const dailyForecast = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/weather`,
+        {
+          params: {
+            lat: this.state.latitude,
+            lon: this.state.longitude
+          }
+        });
+      console.log('This is the daily forecast:', dailyForecast.data);
       // updating the state
       console.log(`setting state here:`);
       this.setState({
@@ -83,7 +93,26 @@ class App extends React.Component {
     }
   }
 
-  // fetchMovies = async() => {
+  fetchMovies = async () => {
+    try {
+      const movieInformation = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/movies`,
+        {
+          params: {
+            location: this.state.cityInput
+          }
+        });
+      console.log('This is the movie information:', movieInformation.data);
+      // updating the state
+      console.log(`setting state here:`);
+      this.setState({
+        movies: movieInformation.data
+      });
+    } catch (error) {
+      this.setState({ errors: `${error.message}` });
+      console.log('Error Found:', error.message);
+    }
+  }
+
   render() {
     console.log(this.state);
     return (
@@ -97,12 +126,14 @@ class App extends React.Component {
               <Search handleSearch={this.handleSearch} />
         }
         <Container>
-          <Weather handleShowSearch={this.showSearch} forecast={this.state.forecast} />
+          <Weather handleShowSearch={this.showSearch} forecastToSend={this.state.forecast} />
+        </Container>
+        <Container>
+          <Movies handleShowSearch={this.showSearch} movies={this.state.movies}/>
         </Container>
         <Footer />
       </>
     );
   }
 }
-
 export default App;

@@ -8,11 +8,11 @@ import './Weather.css';
 class Weather extends React.Component {
 
   render() {
-    if (this.props.forecast.length === 0) {
+    if (this.props.forecastToSend.length === 0) {
       return ('');
     }
     return (
-      <Table striped bordered hover variant="sm" fluid>
+      <Table striped bordered hover variant="sm">
         <thead>
           <tr>
             <th>Date</th>
@@ -22,12 +22,12 @@ class Weather extends React.Component {
           </tr>
         </thead>
         <tbody>
-          {this.props.forecast.map((day, index) => (
+          {this.props.forecastToSend.map((day, index) => (
             <tr key={index}>
               <td>{day.date}</td>
               <td>{day.description}</td>
-              <td>{`${day.lowTemp}°c`}</td>
-              <td>{`${day.hiTemp}°c`}</td>
+              <td>{`${day.lowTemp}°F`}</td>
+              <td>{`${day.hiTemp}°F`}</td>
             </tr>
           ))}
         </tbody>
