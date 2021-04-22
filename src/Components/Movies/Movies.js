@@ -7,6 +7,7 @@ import './Movies.css';
 
 class Movies extends React.Component {
   render() {
+    // console.log('movie data mic check!');
     if (this.props.movies.length === 0) {
       return ('');
     }

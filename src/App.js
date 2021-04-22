@@ -41,7 +41,7 @@ class App extends React.Component {
     // console.log('searched', cityInput);
     try {
       let locationResponse = await axios.get(`https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATIONIQ_KEY}&q=${cityInput}&format=json&limit=1`);
-      console.log(locationResponse.data[0]);
+      // console.log(locationResponse.data[0]);
       console.log('display name', locationResponse.data[0].display_name);
       console.log('latitude', locationResponse.data[0].lat);
       console.log('longitude', locationResponse.data[0].lon);
@@ -56,7 +56,7 @@ class App extends React.Component {
         longitude: locationResponse.data[0].lon,
       });
     } catch (err) {
-      console.log(err);
+      // console.log(err);
       this.setState({
         errors: `${err}`,
         haveSearched: false,
@@ -83,13 +83,13 @@ class App extends React.Component {
         });
       // console.log('This is the daily forecast:', dailyForecast.data);
       // updating the state
-      console.log(`setting state here:`);
+      // console.log(`setting state here:`);
       this.setState({
         forecast: dailyForecast.data
       });
     } catch (error) {
       this.setState({ errors: `${error.message}` });
-      console.log('Error Found:', error.message);
+      // console.log('Error Found:', error.message);
     }
   }
 
@@ -109,12 +109,12 @@ class App extends React.Component {
       });
     } catch (error) {
       this.setState({ errors: `${error.message}` });
-      console.log('Error Found:', error.message);
+      // console.log('Error Found:', error.message);
     }
   }
 
   render() {
-    console.log(this.state);
+    // console.log(this.state);
     return (
       <>
         <Header />
