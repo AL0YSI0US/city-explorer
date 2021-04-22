@@ -16,6 +16,11 @@
 
 ## Getting Started
 
+1. clone repo (or fork) 
+2. install dependencies: `npm i`
+3. procure .env viariables from: the movie database and weatherbitIo
+4. `pm start`to run
+
 <!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
 
 ## Architecture
@@ -23,8 +28,6 @@
 **Languages :** JavaScript | HTML | CSS | Markdown
 
 **Libraries :** Axios | LocationIq | React / Bootstrap
-
-**Tools :** Trello | Github | VS Code / Netlify
 
 **Tools :** Trello | Github | VS Code / Netlify
 
