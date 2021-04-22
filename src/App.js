@@ -38,7 +38,7 @@ class App extends React.Component {
   }
 
   handleSearch = async (cityInput) => {
-    console.log('searched', cityInput);
+    // console.log('searched', cityInput);
     try {
       let locationResponse = await axios.get(`https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATIONIQ_KEY}&q=${cityInput}&format=json&limit=1`);
       console.log(locationResponse.data[0]);
@@ -81,7 +81,7 @@ class App extends React.Component {
             lon: this.state.longitude
           }
         });
-      console.log('This is the daily forecast:', dailyForecast.data);
+      // console.log('This is the daily forecast:', dailyForecast.data);
       // updating the state
       console.log(`setting state here:`);
       this.setState({
@@ -101,9 +101,9 @@ class App extends React.Component {
             location: this.state.cityInput
           }
         });
-      console.log('This is the movie information:', movieInformation.data);
+      // console.log('This is the movie information:', movieInformation.data);
       // updating the state
-      console.log(`setting state here:`);
+      // console.log(`setting state here:`);
       this.setState({
         movies: movieInformation.data
       });
