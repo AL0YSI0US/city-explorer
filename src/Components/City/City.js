@@ -8,7 +8,7 @@ import './City.css';
 
 class City extends React.Component {
   render() {
-    console.log('mic check!');
+    // console.log('city search mic check!');
     return (
       <>
         <Button onClick={this.props.handleShowSearch} variant="primary" type="submit">
@@ -24,3 +24,10 @@ class City extends React.Component {
 }
 
 export default City;
+
+// https://stackoverflow.com/questions/34097560/react-js-replace-img-src-onerror
+// { <img src={this.state.img} ref={img => this.img = img} onError={
+//     () => this.img.src = 'https://media.wired.com/photos/5a0201b14834c514857a7ed7/master/pass/1217-WI-APHIST-01.jpg'
+// }></img> }
+
+

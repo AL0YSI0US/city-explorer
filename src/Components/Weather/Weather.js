@@ -8,6 +8,7 @@ import './Weather.css';
 class Weather extends React.Component {
 
   render() {
+    // console.log('weather data mic check!');
     if (this.props.forecast.length === 0) {
       return ('');
     }
