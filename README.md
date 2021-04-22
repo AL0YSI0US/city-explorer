@@ -139,12 +139,17 @@ As a user of City Explorer, I want to see info about movies related to the city 
 - [X] **When** the user clicks the "Explore!" button
 - [X] **Then** the top twenty movies set in the area will be displayed in the browser
 
-```shell
-span
+```sh
+Estimate of time needed to complete: 120 minutes
+
+Start time: 12:00
+
+Finish time: 2:00
+
+Actual time needed to complete: 120 minutes
 ```
 
-
-<h2 align="center">❤️ Credit and Collaborations 👥
+<h2 align="center">❤️ Credit and Collaborations 👥</h2>
 
 Shout out to { `Lorenzo` } for helping me understand form handling on a deeper level.
 
@@ -153,6 +158,8 @@ Shout out to { `Tom` } for breaking down component handling for me.
 Shout out to { `TA Chance` } for working with me on degugging my code after I broke it down into seperate components.
 
 Shout out to { `TA Joe` } for helping me make sense of accessing / displaying error messages.
+
+Shout out to { `TA Paul` } for helping me make sense of naming conventions while trying to get my front end to access back end data.
 
 ## Resources
 
