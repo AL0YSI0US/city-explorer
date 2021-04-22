@@ -126,7 +126,7 @@ class App extends React.Component {
               <Search handleSearch={this.handleSearch} />
         }
         <Container>
-          <Weather handleShowSearch={this.showSearch} forecastToSend={this.state.forecast} />
+          <Weather handleShowSearch={this.showSearch} forecast={this.state.forecast} />
         </Container>
         <Container>
           <Movies handleShowSearch={this.showSearch} movies={this.state.movies}/>
