@@ -13,7 +13,7 @@ class Movies extends React.Component {
     return (
       <>
         <Container>
-          <h1>What's been filmed here?</h1>
+          <h1>🎥 What's been filmed here? 🎬</h1>
           {
             this.props.movies.map((movie, index) => (
               <div key={index} >
@@ -23,7 +23,7 @@ class Movies extends React.Component {
                 <p id="sm">Average votes: {movie.average_votes}</p>
                 <p id="sm">Total votes: {movie.total_votes}</p>
                 <p id="sm">Popularity: {movie.popularity}</p>
-                <p id="med">🎥 Realease date: {movie.released_date}</p>
+                <p id="med">Realease date: {movie.released_date}</p>
               </div>
             ))
           }
