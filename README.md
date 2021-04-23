@@ -17,9 +17,11 @@
 ## Getting Started
 
 1. clone repo (or fork) 
-2. install dependencies: `npm i`
-3. procure .env viariables from: the movie database and weatherbitIo
-4. `npm start` to run
+2. install packackes: `npm init`
+3. install dependencies `npom install axios` /  `npm install react-bootstrap bootstrap` 
+4. procure .env keys from: [The movie database](https://www.themoviedb.org/) and [WeatherbitIo](https://www.weatherbit.io/)
+5. `npm start` to run
+6. set up your local `.env`
 
 <!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
 
