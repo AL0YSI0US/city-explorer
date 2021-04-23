@@ -5,6 +5,8 @@ import Container from 'react-bootstrap/Container';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Movies.css';
 
+import Movie from './Movie';
+
 class Movies extends React.Component {
   render() {
     // console.log('movie data mic check!');
@@ -17,15 +19,7 @@ class Movies extends React.Component {
           <h1>🎥 What's been filmed here? 🎬</h1>
           {
             this.props.movies.map((movie, index) => (
-              <div key={index} >
-                <img src={movie.image_url} alt={movie.title} />
-                <h2>{movie.title}</h2>
-                <p>{movie.overview}</p>
-                <p id="sm">Average votes: {movie.average_votes}</p>
-                <p id="sm">Total votes: {movie.total_votes}</p>
-                <p id="sm">Popularity: {movie.popularity}</p>
-                <p id="med">Realease date: {movie.released_date}</p>
-              </div>
+              <Movie key={index} movie={movie} />
             ))
           }
         </Container>
