@@ -1,3 +1,5 @@
+'use strict';
+
 import React from 'react';
 // B O O T S T R A P P I N ~
 import Container from 'react-bootstrap/Container';
@@ -33,10 +35,12 @@ class App extends React.Component {
     };
   }
 
+  //         ✔️= stays on app.js     ❌= move to handler file
+  //                                                                  ✔️ showSearch()
   showSearch = () => {
     this.setState({ haveSearched: false });
   }
-
+  //                                                                  ❌ handleSearch()
   handleSearch = async (cityInput) => {
     // console.log('searched', cityInput);
     try {
@@ -66,9 +70,7 @@ class App extends React.Component {
     this.fetchWeather();
     this.fetchMovies();
   }
-  // const vs let [let allows you to change the data types wheras the data type cannot be altered in a const]
-  // create a function that will get the weather data from our back end server
-  // async await - axios GET call [to local host during development stage]
+  //                                                                  ❌ fetchWeather()
   fetchWeather = async () => {
     try {
       // local host will need to be placed in the .env file
@@ -92,7 +94,7 @@ class App extends React.Component {
       // console.log('Error Found:', error.message);
     }
   }
-
+  //                                                                  ❌ fetchMovies()
   fetchMovies = async () => {
     try {
       const movieInformation = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/movies`,
@@ -112,7 +114,7 @@ class App extends React.Component {
       // console.log('Error Found:', error.message);
     }
   }
-
+  //                                                                  ✔️ render()
   render() {
     // console.log(this.state);
     return (
@@ -129,7 +131,7 @@ class App extends React.Component {
           <Weather handleShowSearch={this.showSearch} forecast={this.state.forecast} />
         </Container>
         <Container>
-          <Movies handleShowSearch={this.showSearch} movies={this.state.movies}/>
+          <Movies handleShowSearch={this.showSearch} movies={this.state.movies} />
         </Container>
         <Footer />
       </>
